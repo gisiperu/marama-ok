@@ -4,7 +4,7 @@
 }
 
 @mixin tablet {
-    @media(min-width: $tablet) {
+    @media(min-width: $celular) and (max-width: $tablet) {
         @content;
     }
 }

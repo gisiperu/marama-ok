@@ -20,6 +20,10 @@ footer {
   border-top: solid red 1px;
   border-bottom: solid red 1px;
   margin: 25px 100px; }
+  @media (min-width: 576px) and (max-width: 768px) {
+    #botones {
+      display: block;
+      max-width: 120px; } }
 
 #botones li a {
   color: red;
@@ -73,7 +77,7 @@ footer {
 .nombres-items {
   color: red;
   font-weight: 300;
-  border: medium none;
+  border: none;
   border-top: 1px dashed #2eadc7;
   padding-top: 10px; }
 

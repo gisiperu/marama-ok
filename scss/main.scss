@@ -28,6 +28,11 @@ footer {
     border-top: solid red 1px;
     border-bottom: solid red 1px;
     margin: 25px 100px;
+
+    @include tablet {
+        display: block;
+        max-width: 120px;
+    }
 }
 #botones li a {
     color: $color-btn;
@@ -88,7 +93,7 @@ footer {
 .nombres-items {
     color: $color-items;
     font-weight: 300;
-    border: medium none;
+    border: none;
     border-top: 1px dashed #2eadc7;
     padding-top: 10px;
 }
@@ -186,7 +191,7 @@ form div textarea{
     font-family: 'Roboto Mono', monospace;
 }
 form div input {
-    width: 500px;
+    width: $tablet - 268;
     height: 35px;
     border-radius: 5px;
 }
@@ -204,3 +209,8 @@ form div textarea {
 }
 
 /* termina formulario */
+
+// Media queries
+@media (min-width: $celular) and (max-width: $tablet) {
+
+}
