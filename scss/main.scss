@@ -1,0 +1,206 @@
+@import "utilities/variables";
+@import "utilities/mixins";
+
+body {
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "main main main"
+    "main main main"
+    "footer footer footer"
+    ;
+}
+header {
+    grid-area: header;
+}
+main {
+    grid-area: main;
+}
+footer {
+    grid-area: footer;
+}
+/*nav bar 1*/
+#botones {
+    @include flex-evenly;
+
+    background-color: $color-background;
+    padding: 3px;
+    border-top: solid red 1px;
+    border-bottom: solid red 1px;
+    margin: 25px 100px;
+}
+#botones li a {
+    color: $color-btn;
+    text-decoration: none;
+}
+#botones a:hover {
+    background-color: $color-hover;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+/* termina nav bar 1 */
+
+/* nav bar con fotos 2 */
+.botones-2 {
+    @include flex-evenly;
+
+    background-color: $color-background;
+    border-top: solid red 1px;
+    border-bottom: solid red 1px;
+    font-size: $tamanio-titulos;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+
+    a {
+        text-decoration: none;
+        color: $color-btn
+    }
+
+    a:hover {
+        background-color: $color-hover;
+    }
+}
+#fotos-2 {
+    @include flex-evenly;
+
+    margin-left: 50px;
+    margin-bottom: 30px;
+}
+// nav bar con fotos-3
+.fotos-3 {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 150px;
+    margin-right: 180px;
+}
+/* termina nav bar con fotos 3 */
+ 
+.contraste {
+    background-color: $color-background;
+    width: 187vh;
+    margin-left: 100px;
+    padding: 15px 15px;
+}
+.nombres-items {
+    color: $color-items;
+    font-weight: 300;
+    border: medium none;
+    border-top: 1px dashed #2eadc7;
+    padding-top: 10px;
+}
+.nombres-items a {
+    text-decoration: none;
+    color: $color-items;
+    float: left;
+}
+.descripcion {
+    color: $color-descripcion;
+    font-size: $tamanio-descripcion;
+    margin: 16 px;
+    text-align: left;
+}
+.subtexto {
+    margin-top: 25px;
+}
+.titulos-opciones {
+    color: $color-opciones;
+    font-weight: 200;
+}
+.subtitulos {
+    font-weight: 200;
+    color: $color-subtitulos;
+}
+.titulos-ppales {
+    color: $color-titulos;
+    text-transform: uppercase;
+    font-size: $tamanio-titulos;
+    font-weight: 200;
+}
+.titulo-sec {
+    color: $color-titulos;
+    font-size: medium;
+    font-weight: 200;
+    padding: 15px 0px;
+}
+ul li {
+    list-style-type: none
+}
+body {
+    background-color: #2eadc7;
+    background-image: url(../public/img/fondo.png);
+    font-family: 'Roboto Mono', monospace;
+}
+.logos-grandes {
+    float: left;
+    padding: 10px;
+}
+ 
+/* social bar */
+#social {
+    position: fixed;
+    bottom: 0px;
+    right: 40px;
+}
+#social ul li {
+    text-align: right;
+}
+#social ul li img {
+    width: 30px;
+    height: 30px;
+}
+/* termina social bar */
+
+footer p {
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+ 
+#logo {
+    display: block;
+    margin: 0 auto;
+}
+ 
+/* formulario */
+form {
+    display: grid;
+    justify-content: space-around;
+    margin-left: 90px;
+    margin-top: 30px;
+}
+form div {
+    color: $color-form;
+    margin-top: 15px;
+}
+form div label {
+    font-size: large;
+}
+form div input{
+    font-family: 'Roboto Mono', monospace;
+}
+form div textarea{
+    font-family: 'Roboto Mono', monospace;
+}
+form div input {
+    width: 500px;
+    height: 35px;
+    border-radius: 5px;
+}
+form div textarea {
+    border-radius: 5px;
+}
+#enviar {
+    width: 200px;
+    height: 50px;
+    background-color: red;
+    color: palegoldenrod;
+    font-size: larger;
+    margin-left: 305px;
+    margin-top: 15px;
+}
+
+/* termina formulario */

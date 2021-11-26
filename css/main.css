@@ -1,211 +1,186 @@
+body {
+  display: grid;
+  grid-template-areas: "header header header" "main main main" "main main main" "footer footer footer"; }
+
+header {
+  grid-area: header; }
+
+main {
+  grid-area: main; }
+
+footer {
+  grid-area: footer; }
+
 /*nav bar 1*/
 #botones {
-    display: flex;
-    background-color: palegoldenrod;
-    padding: 3px;
-    justify-content: space-evenly;
-    border-top: solid red 1px;
-    border-bottom: solid red 1px;
-    margin: 25px 100px;
-}
+  display: flex;
+  justify-content: space-evenly;
+  background-color: palegoldenrod;
+  padding: 3px;
+  border-top: solid red 1px;
+  border-bottom: solid red 1px;
+  margin: 25px 100px; }
+
 #botones li a {
-    color: red;
-    text-decoration: none;
-}
+  color: red;
+  text-decoration: none; }
+
 #botones a:hover {
-    background-color: #2eadc7;
-    padding: 2px;
-}
+  background-color: #d3cd8a; }
+
 .dropdown:hover .dropdown-menu {
-    display: block;
-    margin-top: 0;
-}
+  display: block;
+  margin-top: 0; }
+
 /* termina nav bar 1 */
- 
 /* nav bar con fotos 2 */
 .botones-2 {
-    display: grid;
-    background-color: palegoldenrod;
-    padding-left: 20px;
-    margin: 30px 10px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 100px;
-    font-size: x-large;
-}
-.botones-2 div a {
-    color: red;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: palegoldenrod;
+  border-top: solid red 1px;
+  border-bottom: solid red 1px;
+  font-size: x-large;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  margin-left: 50px;
+  margin-right: 50px; }
+  .botones-2 a {
     text-decoration: none;
-    text-align: center;
-}
-.botones-2 a:hover {
-    background-color: #2eadc7;
-    padding: 2px;
-}
-.fotos-2 {
-    display: grid ;
-    grid-gap: 30px;
-    padding: 40px;
-    /* width: 100%; */
-}
-.enlace {
-    border-top: solid red 1px;
-    border-bottom: solid red 1px;
-    padding: 5px;
-}
-/* termina nav bar con fotos 2 */
- 
-/* nav bar con fotos 3 */
-#botones-3 {
-    display: flex;
-    background-color: palegoldenrod;
-    padding-left: 20px;
-    margin: 30px 10px;
-    font-size: x-large;
-    justify-content: space-evenly;
-}
-#botones-3 a {
-    color: red;
-    text-decoration: none;
-    text-align: center;
-    border-top: solid red 1px;
-    border-bottom: solid red 1px;
-   
-}
-#botones-3 a:hover {
-    background-color: #2eadc7;
-    padding: 2px;
-}
-#fotos-3 {
-    display: flex ;
-    width: 100%;
-    height: 100%;
-    justify-content: space-evenly;
-    margin-bottom: 15px;
-    margin-top: 15px;
-}
+    color: red; }
+  .botones-2 a:hover {
+    background-color: #d3cd8a; }
+
+#fotos-2 {
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 50px;
+  margin-bottom: 30px; }
+
+.fotos-3 {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 150px;
+  margin-right: 180px; }
+
 /* termina nav bar con fotos 3 */
- 
 .contraste {
-    background-color: palegoldenrod;
-    width: 83%;
-    margin-left: 100px;
-    padding: 15px 15px;
-}
+  background-color: palegoldenrod;
+  width: 187vh;
+  margin-left: 100px;
+  padding: 15px 15px; }
+
 .nombres-items {
-    color: red;
-    font-weight: 300;
-    border: medium none;
-    border-top: 1px dashed #2eadc7;
-    padding-top: 10px;
-}
+  color: red;
+  font-weight: 300;
+  border: medium none;
+  border-top: 1px dashed #2eadc7;
+  padding-top: 10px; }
+
 .nombres-items a {
-    text-decoration: none;
-    color: red;
-    float: left;
-}
-.nombres-items a:hover {
-    background-color: #2eadc7;
-    padding: 2px;
-    font-weight: 200;
-}
+  text-decoration: none;
+  color: red;
+  float: left; }
+
 .descripcion {
-    color: gray;
-    font-size: medium;
-    margin: 16 px;
-    text-align: left;
-}
+  color: #3b3b3b;
+  font-size: medium;
+  margin: 16 px;
+  text-align: left; }
+
 .subtexto {
-    margin-top: 25px;
-}
+  margin-top: 25px; }
+
 .titulos-opciones {
-    color: #2eadc7;
-    font-weight: 200;
-}
+  color: #2eadc7;
+  font-weight: 200; }
+
 .subtitulos {
-    font-weight: 200;
-    color: red;
-}
+  font-weight: 200;
+  color: red; }
+
 .titulos-ppales {
-    color: red;
-    text-transform: uppercase;
-    font-size: x-large;
-    font-weight: 200;
-}
+  color: red;
+  text-transform: uppercase;
+  font-size: x-large;
+  font-weight: 200; }
+
 .titulo-sec {
-    color: red;
-    font-size: medium;
-    font-weight: 200;
-    padding: 15px 0px;
-}
+  color: red;
+  font-size: medium;
+  font-weight: 200;
+  padding: 15px 0px; }
+
 ul li {
-    list-style-type: none
-}
+  list-style-type: none; }
+
 body {
-    background-color: aquamarine;
-    background-image: url(../public/img/fondo.png);
-    font-family: 'Roboto Mono', monospace;
-}
+  background-color: #2eadc7;
+  background-image: url(../public/img/fondo.png);
+  font-family: 'Roboto Mono', monospace; }
+
 .logos-grandes {
-    float: left;
-    padding: 10px;
-}
- 
+  float: left;
+  padding: 10px; }
+
 /* social bar */
 #social {
-    position: fixed;
-    bottom: 0px;
-    right: 40px;
-}
+  position: fixed;
+  bottom: 0px;
+  right: 40px; }
+
 #social ul li {
-    text-align: right;
-}
+  text-align: right; }
+
 #social ul li img {
-    width: 30px;
-    height: 30px;
-}
+  width: 30px;
+  height: 30px; }
+
 /* termina social bar */
- 
+footer p {
+  text-align: left;
+  margin-top: 20px;
+  margin-left: 10px; }
+
 #logo {
-    display: block;
-    margin: 0 auto;
-}
- 
+  display: block;
+  margin: 0 auto; }
+
 /* formulario */
 form {
-    display: grid;
-    justify-content: space-around;
-    margin-left: 90px;
-    margin-top: 30px;
-}
+  display: grid;
+  justify-content: space-around;
+  margin-left: 90px;
+  margin-top: 30px; }
+
 form div {
-    color: red;
-    margin-top: 15px;
-}
+  color: red;
+  margin-top: 15px; }
+
 form div label {
-    font-size: large;
-}
-form div input{
-    font-family: 'Roboto Mono', monospace;
-}
-form div textarea{
-    font-family: 'Roboto Mono', monospace;
-}
+  font-size: large; }
+
 form div input {
-    width: 500px;
-    height: 35px;
-    border-radius: 5px;
-}
+  font-family: 'Roboto Mono', monospace; }
+
 form div textarea {
-    border-radius: 5px;
-}
+  font-family: 'Roboto Mono', monospace; }
+
+form div input {
+  width: 500px;
+  height: 35px;
+  border-radius: 5px; }
+
+form div textarea {
+  border-radius: 5px; }
+
 #enviar {
-    width: 200px;
-    height: 50px;
-    background-color: red;
-    color: palegoldenrod;
-    font-size: larger;
-    margin-left: 305px;
-    margin-top: 15px;
-}
- 
+  width: 200px;
+  height: 50px;
+  background-color: red;
+  color: palegoldenrod;
+  font-size: larger;
+  margin-left: 305px;
+  margin-top: 15px; }
+
 /* termina formulario */
