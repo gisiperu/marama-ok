@@ -4,25 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="marama, catering, pasteleria, tortas, postres, petit-fours, dulce, artesanal, muffins, cupcakes">
-    <meta name="description" content="Todo lo dulce que quieras comer, encontralo acá. Variedad y experiencia en un sólo lugar.">
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="../public/img/favicon.png">
     <!--Google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
+ 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+ 
     <!--Main css-->
+    <title>Marama Catering | Pastelería | Petit-fours</title>
+    <link rel="shortcut icon" href="../public/img/favicon.png">
     <link rel="stylesheet" href="../css/main.css">
-    <!-- Title -->
-    <title>Marama Catering | Catering | Pastelería</title>
 </head>
 <body>
     <header>
         <nav>
-            <a id="logo" href="../index.html"><img src="../public/img/logo.webp" alt="logo-marama"></a>
+            <a href="../index.html"><img src="../public/img/logo.webp" alt="logo-marama" id="logo"></a>
             <ul id="botones">
                 <li><a href="../index.html">INICIO</a></li>
                 <li class="dropdown"><a class="dropdown-toggle" href="../pages/catering.html" role="button"    id="dropdownMenuLink" aria-expanded="false">CATERING</a>
@@ -35,7 +33,7 @@
                 <li class="dropdown"><a style="font-weight: 600" class="dropdown-toggle" href="../pages/pasteleria.html" role="button" id="dropdownMenuLink" aria-expanded="false">PASTELERÍA</a>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                         <li><a class="dropdown-item" href="../pages/tortas.html">TORTAS</a></li>
-                        <li><a class="dropdown-item" href="../pages/petit-fours.html">PETIT-FOURS</a></li>
+                        <li><a style="font-weight: 600" class="dropdown-item" href="../pages/petit-fours.html">PETIT-FOURS</a></li>
                         <li><a class="dropdown-item" href="../pages/otros.html">OTROS</a></li>
                     </ul>
                 </li>
@@ -50,25 +48,38 @@
         </nav>
     </header>
     <main class="contraste">
-        <h1 class="titulos-ppales">Servicio de pastelería</h1>
-        <hr style="color: #2eadc7;">
-        <img class="logos-grandes" src="../public/img/cupcake.webp" alt="cupcake">
-        <ul class="subtexto">
-            <li class="descripcion">Contamos con un servicio de pastelería muy completo: tortas, petit fours, muffins y mucho más.</li>
-            <li class="descripcion">Ofrecemos lo mejor de los sabores tradicionales y una amplia variedad de novedosas combinaciones.</li>
-            <li class="descripcion">Nos ocupamos de mesas dulces, pedidos individuales, eventos y fiestas.</li>
-            <li class="descripcion">Podemos encargarnos de todo el servicio, combinalo con nuestro servicio de catering, para tener una experiencia completa.</li>
+        <h1 class="titulos-opciones">Pastelería <span class="subtitulos">/ Petit fours</span></h1>
+        <hr style="color: red;">
+        <p class="subtitulos">Pequeños bocaditos.</p>
+        <ul>
+            <li>
+                <p class="nombres-items">BERRY PIE<p class="descripcion">Masa sablée, mousse de chocolate blanco y cremoso de frutos rojos</p></p>
+            </li>
+            <li>
+                <p class="nombres-items">BLANCO PASIÓN<p class="descripcion">Base de chocolate, mousse de chocolate blanco y cremoso de maracuyá</p></p>
+            </li>
+            <li>
+                <p class="nombres-items">BROWNIE<p class="descripcion">Clásicos de chocolate con nuez. Opcional: dulce de leche y merengue italiano</p></p>
+            </li>
+            <li>
+                <p class="nombres-items">CHEESCAKE<p class="descripcion">Clásica torta de queso, con base de galletitas Lincoln y mermelada casera de maracuyá o de frutos rojos</p></p>
+            </li>
+            <li>
+                <p class="nombres-items">CRUMBLE DE MANZANAS<p class="descripcion">Masa sablée, compota de manzanas con canela y crumble de nueces</p></p>
+            </li>
+            <li>
+                <p class="nombres-items">LEMON PIE<p class="descripcion">Masa sablée, curd de limón y merengue italiano</p></p>
+            </li>
+            <li>
+                <p class="nombres-items">NOUGAT<p class="descripcion">Masa sablé de caco, mousse de chocolate y relleno de frutos secos y caramelo</p></p>
+            </li>
+            <li>
+                <p class="nombres-items">ROGEL<p class="descripcion">Masa neutra, dulce de leche y merengue italiano</p></p>
+            </li>
+            <li>
+                <p class="nombres-items">TARTA DE COCO Y DULCE DE LECHE<p class="descripcion">Masa sablé, dulce de leche y relleno de coco</p></p>
+            </li>
         </ul>
-        <div>
-            <ul id="botones">
-                <li><a href="tortas.html">TORTAS</a></li>
-                <li><a href="petit-fours.html">PETIT-FOURS</a></li>
-                <li><a href="otros.html">OTROS</a></li>
-            </ul>
-            <ul class="fotos-3">
-                <img style="border: solid 2px rgb(59, 59, 59);" src="../public/img/tortas.webp" alt="torta-berry-pie">
-                <img style="border: solid 2px rgb(59, 59, 59);" src="../public/img/petit-fours.webp" alt="petit-fours">
-                <img style="border: solid 2px rgb(59, 59, 59);"src="../public/img/otros.webp" alt="cuadraditos-de-coco"></ul>
     </main>
     <footer>
         <div id="social">
