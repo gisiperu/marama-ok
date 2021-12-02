@@ -47,47 +47,53 @@ footer {
 }
 /* termina nav bar 1 */
 
-/* nav bar con fotos 2 */
-.botones-2 {
-    @include flex-evenly;
-
-    background-color: $color-background;
-    border-top: solid red 1px;
-    border-bottom: solid red 1px;
-    font-size: $tamanio-titulos;
-    margin-top: 50px;
-    margin-bottom: 30px;
-    margin-left: 50px;
-    margin-right: 50px;
-
+.contenedor-img-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 768px) {
+    .contenedor-img-texto {
+        flex-direction: row;
+    }
+}
+.contenedor-total {
+    display: flex;
+    flex: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+@media (max-width: 768px) {
+    .contenedor-total {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+.card-comida {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     a {
         text-decoration: none;
-        color: $color-btn
+        color: red;
+        border-top: solid 1px red;
+        border-bottom: solid 1px red;
+        margin-top: 20px;
     }
-
     a:hover {
         background-color: $color-hover;
     }
+    img {
+        margin-top: 20px;
+        width: 250px;
+        height: 250px;
+        border: solid 2px rgb(59, 59, 59);
+    }
 }
-#fotos-2 {
-    @include flex-evenly;
-
-    margin-left: 50px;
-    margin-bottom: 30px;
-}
-// nav bar con fotos-3
-.fotos-3 {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 150px;
-    margin-right: 180px;
-}
-/* termina nav bar con fotos 3 */
- 
 .contraste {
     background-color: $color-background;
-    width: 187vh;
-    margin-left: 100px;
     padding: 15px 15px;
 }
 .nombres-items {
@@ -158,59 +164,46 @@ body {
     height: 30px;
 }
 /* termina social bar */
-
 footer p {
     text-align: left;
     margin-top: 20px;
     margin-left: 10px;
 }
- 
 #logo {
     display: block;
     margin: 0 auto;
 }
- 
-/* formulario */
+ /* formulario */
 form {
     display: grid;
     justify-content: space-around;
     margin-left: 90px;
     margin-top: 30px;
-}
-form div {
+    div {
     color: $color-form;
     margin-top: 15px;
-}
-form div label {
-    font-size: large;
-}
-form div input{
-    font-family: 'Roboto Mono', monospace;
-}
-form div textarea{
-    font-family: 'Roboto Mono', monospace;
-}
-form div input {
-    width: $tablet - 268;
-    height: 35px;
-    border-radius: 5px;
-}
-form div textarea {
-    border-radius: 5px;
+    label {
+        font-size: large;
+        }
+    input {
+        font-family: 'Roboto Mono', monospace;
+        width: 70vw;
+        height: 35px;
+        border-radius: 5px;
+        }
+    textarea {
+        font-family: 'Roboto Mono', monospace;
+        width: 70vw;
+        border-radius: 5px;
+        }
+    }
 }
 #enviar {
-    width: 200px;
+    width: 20vw;
     height: 50px;
     background-color: red;
     color: palegoldenrod;
     font-size: larger;
-    margin-left: 305px;
-    margin-top: 15px;
+    justify-content: right;
 }
-
 /* termina formulario */
-
-// Media queries
-@media (min-width: $celular) and (max-width: $tablet) {
-
-}

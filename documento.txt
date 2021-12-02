@@ -1,0 +1,6 @@
+
+Agregué
+	-keywords
+	-description
+	-favicon
+	-h1 ya tenían todas menos index y contacto y las dejé así

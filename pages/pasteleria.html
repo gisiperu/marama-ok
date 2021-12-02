@@ -22,53 +22,59 @@
 <body>
     <header>
         <nav>
-            <a id="logo" href="../index.html"><img src="../public/img/logo.webp" alt="logo-marama"></a>
+            <a id="logo" href="../index.html"><img src="../public/img/logo.webp" alt="logo-marama" id="logo"></a>
             <ul id="botones">
                 <li><a href="../index.html">INICIO</a></li>
-                <li class="dropdown"><a class="dropdown-toggle" href="../pages/catering.html" role="button"    id="dropdownMenuLink" aria-expanded="false">CATERING</a>
+                <li class="dropdown"><a class="dropdown-toggle" href="../pages/catering.html" role="button" id="dropdownMenuLink" aria-expanded="false">CATERING</a>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <li><a class="dropdown-item" href="../pages/entradas.html">ENTRADAS</a></li>
-                        <li><a class="dropdown-item" href="../pages/principales.html">PRINCIPALES</a></li>
-                        <li><a class="dropdown-item" href="../pages/postres.html">POSTRES</a></li>
+                        <li><a class="dropdown-item" href="../pages/catering-entradas.html">ENTRADAS</a></li>
+                        <li><a class="dropdown-item" href="../pages/catering-principales.html">PRINCIPALES</a></li>
+                        <li><a class="dropdown-item" href="../pages/catering-postres.html">POSTRES</a></li>
                     </ul>
                 </li>
                 <li class="dropdown"><a style="font-weight: 600" class="dropdown-toggle" href="../pages/pasteleria.html" role="button" id="dropdownMenuLink" aria-expanded="false">PASTELERÍA</a>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <li><a class="dropdown-item" href="../pages/tortas.html">TORTAS</a></li>
-                        <li><a class="dropdown-item" href="../pages/petit-fours.html">PETIT-FOURS</a></li>
-                        <li><a class="dropdown-item" href="../pages/otros.html">OTROS</a></li>
+                        <li><a class="dropdown-item" href="../pages/pasteleria-tortas.html">TORTAS</a></li>
+                        <li><a class="dropdown-item" href="../pages/pasteleria-petit-fours.html">PETIT-FOURS</a></li>
+                        <li><a class="dropdown-item" href="../pages/pasteleria-otros.html">OTROS</a></li>
                     </ul>
                 </li>
                 <li class="dropdown"><a class="dropdown-toggle" href="../pages/rodajes.html" role="button" id="dropdownMenuLink" aria-expanded="false">RODAJES</a>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <li><a class="dropdown-item" href="../pages/desayunos-y-meriendas.html">DESAYUNOS Y MERIENDAS</a></li>
-                        <li><a class="dropdown-item" href="../pages/almuerzos-y-cenas.html">ALMUERZOS Y CENAS</a></li>
+                        <li><a class="dropdown-item" href="../pages/rodajes-desayunos-y-meriendas.html">DESAYUNOS Y MERIENDAS</a></li>
+                        <li><a class="dropdown-item" href="../pages/rodajes-almuerzos-y-cenas.html">ALMUERZOS Y CENAS</a></li>
                     </ul>
                 </li>
                 <li><a href="../pages/contacto.html">CONTACTO</a></li>
             </ul>    
         </nav>
     </header>
-    <main class="contraste">
+    <main class="contraste container">
         <h1 class="titulos-ppales">Servicio de pastelería</h1>
         <hr style="color: #2eadc7;">
-        <img class="logos-grandes" src="../public/img/cupcake.webp" alt="cupcake">
-        <ul class="subtexto">
-            <li class="descripcion">Contamos con un servicio de pastelería muy completo: tortas, petit fours, muffins y mucho más.</li>
-            <li class="descripcion">Ofrecemos lo mejor de los sabores tradicionales y una amplia variedad de novedosas combinaciones.</li>
-            <li class="descripcion">Nos ocupamos de mesas dulces, pedidos individuales, eventos y fiestas.</li>
-            <li class="descripcion">Podemos encargarnos de todo el servicio, combinalo con nuestro servicio de catering, para tener una experiencia completa.</li>
-        </ul>
-        <div>
-            <ul id="botones">
-                <li><a href="tortas.html">TORTAS</a></li>
-                <li><a href="petit-fours.html">PETIT-FOURS</a></li>
-                <li><a href="otros.html">OTROS</a></li>
-            </ul>
-            <ul class="fotos-3">
-                <img style="border: solid 2px rgb(59, 59, 59);" src="../public/img/tortas.webp" alt="torta-berry-pie">
-                <img style="border: solid 2px rgb(59, 59, 59);" src="../public/img/petit-fours.webp" alt="petit-fours">
-                <img style="border: solid 2px rgb(59, 59, 59);"src="../public/img/otros.webp" alt="cuadraditos-de-coco"></ul>
+        <div class="contenedor-img-texto">
+            <img class="logos-grandes" src="../public/img/cupcake.webp" alt="cupcake">
+            <div class="subtexto">
+                <p class="descripcion">Contamos con un servicio de pastelería muy completo: tortas, petit fours, muffins y mucho más.</p>
+                <p class="descripcion">Ofrecemos lo mejor de los sabores tradicionales y una amplia variedad de novedosas combinaciones.</p>
+                <p class="descripcion">Nos ocupamos de mesas dulces, pedidos individuales, eventos y fiestas.</p>
+                <p class="descripcion">Podemos encargarnos de todo el servicio, combinalo con nuestro servicio de catering, para tener una experiencia completa.</p>
+            </div>
+        </div>
+        <div class="contenedor-total">
+            <div class="card-comida">
+                <a href="pasteleria-tortas.html">TORTAS</a>
+                <img src="../public/img/berry-pie.webp" alt="torta-berry-pie">
+            </div>
+            <div class="card-comida">
+                <a href="pasteleria-petit-fours.html">PETIT-FOURS</a>
+                <img src="../public/img/petit-fours.webp" alt="petit-fours">
+            </div>
+            <div class="card-comida">
+                <a href="pasteleria-otros.html">OTROS</a>
+                <img src="../public/img/otros.webp" alt="cuadraditos-de-coco">
+            </div>
+        </div>
     </main>
     <footer>
         <div id="social">
