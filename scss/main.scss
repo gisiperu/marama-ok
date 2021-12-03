@@ -28,11 +28,6 @@ footer {
     border-top: solid red 1px;
     border-bottom: solid red 1px;
     margin: 25px 100px;
-
-    @include tablet {
-        display: block;
-        max-width: 120px;
-    }
 }
 #botones li a {
     color: $color-btn;
@@ -46,14 +41,44 @@ footer {
     margin-top: 0;
 }
 /* termina nav bar 1 */
-
+// boton hamburguesa
+.navbar {
+    display: none;
+}
+.offcanvas {
+    background-color: $color-background;
+    color: $color-btn;
+    height: 50vh;
+    width: 23vw;
+}
+#btn-1 {
+    color: $color-btn;
+}
+#btn-2 {
+    color: $color-btn;
+}
+.dropdown-item {
+    color: $color-btn;
+}
+#offcanvasNavbarDropdown {
+    color: $color-btn;
+}
+@media (max-width: $tablet) {
+    #botones {
+        display: none;
+    }
+    .navbar {
+        display: block;
+    }
+}
+// termina boton hamburguesa
 .contenedor-img-texto {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: left;
     align-items: center;
 }
-@media (max-width: 768px) {
+@media (max-width: $tablet) {
     .contenedor-img-texto {
         flex-direction: row;
     }
@@ -65,7 +90,7 @@ footer {
     align-items: center;
     gap: 50px;
 }
-@media (max-width: 768px) {
+@media (max-width: $tablet) {
     .contenedor-total {
         flex-direction: row;
         flex-wrap: wrap;
@@ -77,7 +102,7 @@ footer {
     align-items: center;
     a {
         text-decoration: none;
-        color: red;
+        color: $color-btn;
         border-top: solid 1px red;
         border-bottom: solid 1px red;
         margin-top: 20px;
@@ -149,7 +174,6 @@ body {
     float: left;
     padding: 10px;
 }
- 
 /* social bar */
 #social {
     position: fixed;
@@ -171,7 +195,7 @@ footer p {
 }
 #logo {
     display: block;
-    margin: 0 auto;
+    text-align: center;
 }
  /* formulario */
 form {

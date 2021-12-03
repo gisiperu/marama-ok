@@ -20,10 +20,6 @@ footer {
   border-top: solid red 1px;
   border-bottom: solid red 1px;
   margin: 25px 100px; }
-  @media (min-width: 576px) and (max-width: 768px) {
-    #botones {
-      display: block;
-      max-width: 120px; } }
 
 #botones li a {
   color: red;
@@ -37,10 +33,37 @@ footer {
   margin-top: 0; }
 
 /* termina nav bar 1 */
+.navbar {
+  display: none; }
+
+.offcanvas {
+  background-color: palegoldenrod;
+  color: red;
+  height: 50vh;
+  width: 23vw; }
+
+#btn-1 {
+  color: red; }
+
+#btn-2 {
+  color: red; }
+
+.dropdown-item {
+  color: red; }
+
+#offcanvasNavbarDropdown {
+  color: red; }
+
+@media (max-width: 768px) {
+  #botones {
+    display: none; }
+  .navbar {
+    display: block; } }
+
 .contenedor-img-texto {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: left;
   align-items: center; }
 
 @media (max-width: 768px) {
@@ -155,7 +178,7 @@ footer p {
 
 #logo {
   display: block;
-  margin: 0 auto; }
+  text-align: center; }
 
 /* formulario */
 form {

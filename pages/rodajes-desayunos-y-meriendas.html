@@ -22,7 +22,59 @@
 <body>
     <header>
         <nav>
-            <a id="logo" href="../index.html"><img src="../public/img/logo.webp" alt="logo-marama" id="logo"></a>
+            <a id="logo" href="../index.html"><img src="../public/img/logo.webp" alt="logo-marama"></a>
+            <!-- Navbar responsive -->
+            <nav class="navbar navbar-light fixed-top">
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="../index.html" id="btn-1">INICIO</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="../pages/catering.html" id="offcanvasNavbarDropdown" role="button" aria-expanded="false">
+                            CATERING
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                            <li><a class="dropdown-item" href="../pages/catering-entradas.html">ENTRADAS</a></li>
+                            <li><a class="dropdown-item" href="../pages/catering-principales.html">PRINCIPALES</a></li>
+                            <li><a class="dropdown-item" href="../pages/catering-postres.html">POSTRES</a></li>
+                          </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="../pages/pasteleria.html" id="offcanvasNavbarDropdown" role="button" aria-expanded="false">
+                            PASTELERÍA
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                            <li><a class="dropdown-item" href="../pages/pasteleria-tortas.html">TORTAS</a></li>
+                            <li><a class="dropdown-item" href="../pages/pasteleria-petit-fours.html">PETIT-FOURS</a></li>
+                            <li><a class="dropdown-item" href="../pages/pasteleria-otros.html">OTROS</a></li>
+                          </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a style="font-weight: 550;" class="nav-link dropdown-toggle" href="../pages/rodajes.html" id="offcanvasNavbarDropdown" role="button" aria-expanded="false">
+                            RODAJES
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                            <li><a style="font-weight: 550;" class="dropdown-item" href="../pages/rodajes-desayunos-y-meriendas.html">DESAYUNOS Y MERIENDAS</a></li>
+                            <li><a class="dropdown-item" href="../pages/rodajes-almuerzos-y-cenas.html">ALMUERZOS Y CENAS</a></li>
+                          </ul>
+                        </li><li class="nav-item">
+                          <a class="nav-link btn-2" href="../pages/contacto.html" id="btn-2">CONTACTO</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+              <!-- Navbar desktop -->
             <ul id="botones">
                 <li><a href="../index.html">INICIO</a></li>
                 <li class="dropdown"><a class="dropdown-toggle" href="../pages/catering.html" role="button" id="dropdownMenuLink" aria-expanded="false">CATERING</a>
