@@ -1,24 +1,24 @@
 @import "utilities/variables";
 @import "utilities/mixins";
 
-body {
-    display: grid;
-    grid-template-areas:
-    "header header header"
-    "main main main"
-    "main main main"
-    "footer footer footer"
-    ;
-}
-header {
-    grid-area: header;
-}
-main {
-    grid-area: main;
-}
-footer {
-    grid-area: footer;
-}
+// body {
+//     display: grid;
+//     grid-template-areas:
+//     "header header header"
+//     "main main main"
+//     "main main main"
+//     "footer footer footer"
+//     ;
+// }
+// header {
+//     grid-area: header;
+// }
+// main {
+//     grid-area: main;
+// }
+// footer {
+//     grid-area: footer;
+// }
 /*nav bar 1*/
 #botones {
     @include flex-evenly;
@@ -71,6 +71,12 @@ footer {
         display: block;
     }
 }
+@media (max-width: $celular) {
+    .offcanvas {
+        width: 25vw;
+        height: 55vh;
+    }
+}
 // termina boton hamburguesa
 .contenedor-img-texto {
     display: flex;
@@ -90,7 +96,7 @@ footer {
     align-items: center;
     gap: 50px;
 }
-@media (max-width: $tablet) {
+@media (max-width: 991px) {
     .contenedor-total {
         flex-direction: row;
         flex-wrap: wrap;
@@ -142,6 +148,21 @@ footer {
 .subtexto {
     margin-top: 25px;
 }
+@media(max-width: 991px) {
+    .subtexto {
+        p {
+        font-size: small;
+        float: right;
+    }
+}
+}
+@media (max-width: $celular) {
+    .subtexto {
+        p {
+            font-size: smaller;
+        }
+    }
+}
 .titulos-opciones {
     color: $color-opciones;
     font-weight: 200;
@@ -171,8 +192,13 @@ body {
     font-family: 'Roboto Mono', monospace;
 }
 .logos-grandes {
-    float: left;
+    justify-content: left;
     padding: 10px;
+}
+@media(max-width: 991px) {
+    .logos-grandes {
+        width: 70vw;
+    }
 }
 /* social bar */
 #social {
@@ -196,6 +222,13 @@ footer p {
 #logo {
     display: block;
     text-align: center;
+}
+@media(max-width: $tablet) {
+    #logo {
+        img {
+            width: 50vw
+        }
+    }
 }
  /* formulario */
 form {
