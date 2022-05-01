@@ -1,54 +1,100 @@
 class Torta {
-    constructor(nombre, ingredientes, precio) {
+    constructor(id, nombre, ingredientes, precioChica, precioGrande) {
+        this.id = id
         this.nombre = nombre
         this.ingredientes = ingredientes
-        this.precio = precio
+        this.precioChica = precioChica
+        this.precioGrande = precioGrande
     }
-    precioTotal(totalTortas) {
+    /*precioTotal(totalTortas) {
         let torta1era = prompt("Ingrese una torta de la lista")
         let torta2da = prompt("Ingrese otra torta de la lista")
-        let torta3era = prompt("Ingrese otra torta de la lista")
+        let torta3era = prompt("Ingrese otra torta de la lista")|||
         this.precio += totalTortas
-    } 
+    } */
 }
-const torta1 = new Torta("Berry pie", "Masa sablée, mousse de chocolate blanco y cremoso de frutos rojos", 500)
-const torta2 = new Torta("Blanco pasión", "Base de chocolate, mousse de chocolate blanco y cremoso de maracuyá", 600)
-const torta3 = new Torta("Cheescake", "Base de chocolate, mousse de chocolate blanco y cremoso de maracuyá", 700)
-const torta4 = new Torta("Coffelate", "Cláscio con basBase de chocolate, creme brulée de café y mousse de chocolate y cafée de galletitas Lincoln y mermelada casera de frutos rojos o de maracuyá", 550)
-/*const torta5 = new Torta("Crocante chocorange", "Masa sablée, cremoso de naranja, ganche de chocolate y crocante de almendras, 750")
-const torta6 = new Torta("Crumble de manzanas", "Masa sablée, compota de manzanas con canela y crumble de nueces", 800)
-const torta7 = new Torta("Lemon pie", "Masa sablée, curd de limón y merengue italiano, 550")
-const torta8 = new Torta("Mousse del bosque", "Base de chocolate, mousse y mermelada de frutos del bosque", 750)
-const torta9 = new Torta("Mousse tropical", "Base de chocolate, mousse y mermelada de maracuyá", 800)
-const torta10 = new Torta("Nougat", "Masa sablée de chocolate, relleno de frutos secos y caramelo, mousse de chocolate", 850)
-const torta11 = new Torta("Pirineos", "Brownie con nuez, dulce de leche y merengue italiano, 800")
-const torta12 = new Torta("Rogel", "Masa neutra, dulce de leche y merengue italiano, 550")
-const torta13 = new Torta("Sambayón", "Base de chocolate, bananas caramelizadas, mousse de Oporto y ganache de chocolate", 750)
-const torta14 = new Torta("Tarta de coco y dulce de leche", "Masa sablé, dulce de leche y relleno de coco", 650)
-const tort15 = new Torta("Tentación", "Base húmeda de chocolate, dulce de leche, mousse de chocolate y baño de cacao", 700)
-const torta16 = new Torta("Tiramisú", "Mousse de queso, creme brulée de café y vainillas remojadas en almibar de café", 750)
-const torta17 = new Torta("Trichoco", "Base húmeda de chocolate y tres mousses: de chocolate amargo, con leche y blanco", 800) */
+const tortas = [
+    {id: 1, nombre: "Berrie pie", ingredientes: "Masa sablée, mousse de chocolate blanco y cremoso de frutos rojos", precioChica: 2100, precioGrande: 3000},
+    {id: 2, nombre: "Cheescake", ingredientes: "Base de chocolate, mousse de chocolate blanco y cremoso de maracuyá", precioChica: 2100, precioGrande: 3000},
+    {id: 3, nombre: "Chocoberry", ingredientes: "Mousse de chocolate y mousse de frutos rojos", precioChica: 2200, precioGrande: 3100},
+    {id: 4, nombre: "Carrot cake", ingredientes: "Bizcochuelo de zanahoria con nueces y pasas de uva, rellena y cubierta de una crema de manteca y queso", precioChica: 1700, precioGrande: 2400},
+    {id: 5, nombre: "Crocante chocorange", ingredientes: "Masa sablée, cremoso de naranja, ganche de chocolate y crocante de almendras", precioChica: 2000, precioGrande: 2850},
+    {id: 6, nombre: "Crumble de manzanas", ingredientes: "Masa sablée, compota de manzanas con canela y crumble de nueces", precioChica: 1700, precioGrande: 2400},
+    {id: 7, nombre: "Lemon pie", ingredientes: "Masa sablée, curd de limón y merengue italiano", precioChica: 1600, precioGrande: 2300},
+    {id: 8, nombre: "Mousse del bosque", ingredientes: "Base de chocolate, mousse y mermelada de frutos del bosque", precioChica: 2000, precioGrande: 2850},
+    {id: 9, nombre: "Mousse tropical", ingredientes: "Base de chocolate, mousse y mermelada de maracuyá", precioChica: 2000, precioGrande: 2850},
+    {id: 10, nombre: "Nougat", ingredientes: "Masa sablée de chocolate, relleno de frutos secos y caramelo, mousse de chocolate", precioChica: 2200, precioGrande: 3100},
+    {id: 11, nombre: "Pirineos", ingredientes: "Brownie con nuez, dulce de leche y merengue italiano", precioChica: 1900, precioGrande: 2700},
+    {id: 12, nombre: "Rogel", ingredientes: "Masa neutra, dulce de leche y merengue italiano", precioChica: 1700, precioGrande: 2400},
+    {id: 13, nombre: "Sambayón", ingredientes: "Base de chocolate, bananas caramelizadas, mousse de Oporto y ganache de chocolate", precioChica: 1900, precioGrande: 2700},
+    {id: 14, nombre: "Tarta de coco y dulce de leche", ingredientes: "Masa sablé, dulce de leche y relleno de coco", precioChica: 1600, precioGrande: 2300},
+    {id: 15, nombre: "Tentación", ingredientes: "Base húmeda de chocolate, dulce de leche, mousse de chocolate y baño de cacao", precioChica: 2000, precioGrande: 2850},
+    {id: 16, nombre: "Tiramisú", ingredientes: "Mousse de queso, creme brulée de café y vainillas remojadas en almibar de café", precioChica: 1800, precioGrande: 2600},
+    {id: 17, nombre: "Trichoco", ingredientes: "Base húmeda de chocolate y tres mousses: de chocolate amargo, con leche y blanco", precioChica: 2200, precioGrande: 3300},
+]
 
-let precioTotal = 0
-let descuento = (precioTotal) => precioTotal * 0.2  //let descuento = (precioTotal * 0,2) 
-if (precioTotal >=3000) {
-    precioTotal -= descuento
-}
-
-let respuesta = parseInt(prompt("Elija un número entre 1 y 4"))
+let respuesta = parseInt(prompt("Elija un número entre 1 y 17"))
 switch(respuesta) {
     case 1:
-        console.log(`Su torta es ${torta1.nombre}, el precio es ${torta1.precio}. Si tu compra es mayor a $3000, tenés un descuento del 20%. Te quedaría en ${descuento(torta1.precio)}`)
+        console.log(`Su torta es ${tortas[1].nombre}, el precio para 10 porciones es de $${tortas[1].precioChica} y el precio para 16 porciones es de $${tortas[1].precioGrande}. Si tu compra es mayor a $5000, tenés un descuento del 20%.`)
         break
     case 2:
-        console.log(`Su torta es ${torta2.nombre}, el precio es ${torta2.precio}. Si tu compra es mayor a $3000, tenés un descuento del 20%. Te quedaría en ${descuento(torta2.precio)}`)
+        console.log(`Su torta es ${tortas[2].nombre}, el precio para 10 porciones es de $${tortas[2].precioChica} y el precio para 16 porciones es de $${tortas[2].precioGrande}. Si tu compra es mayor a $5000, tenés un descuento del 20%.`)
         break
     case 3:
-        console.log(`Su torta es ${torta3.nombre}, el precio es ${torta3.precio}. Si tu compra es mayor a $3000, tenés un descuento del 20%. Te quedaría en ${descuento(torta3.precio)}`)
+        console.log(`Su torta es ${tortas[3].nombre}, el precio para 10 porciones es de $${tortas[3].precioChica} y el precio para 16 porciones es de $${tortas[3].precioGrande}. Si tu compra es mayor a $5000, tenés un descuento del 20%.`)
         break
     case 4:
-        console.log(`Su torta es ${torta4.nombre}, el precio es ${torta4.precio}. Si tu compra es mayor a $3000, tenés un descuento del 20%. Te quedaría en ${descuento(torta4.precio)}`)
+        console.log(`Su torta es ${tortas[4].nombre}, el precio para 10 porciones es de $${tortas[4].precioChica} y el precio para 16 porciones es de $${tortas[4].precioGrande}. Si tu compra es mayor a $5000, tenés un descuento del 20%.`)
+        break
+    case 5:
+        console.log(`Su torta es ${tortas[5].nombre}, el precio para 10 porciones es de $${tortas[5].precioChica} y el precio para 16 porciones es de $${tortas[5].precioGrande}. Si tu compra es mayor a $5000, tenés un descuento del 20%.`)
+        break
+    case 6:
+        console.log(`Su torta es ${tortas[6].nombre}, el precio para 10 porciones es de $${tortas[6].precioChica} y el precio para 16 porciones es de $${tortas[6].precioGrande}. Si tu compra es mayor a $5000, tenés un descuento del 20%.`)
+        break
+    case 7:
+        console.log(`Su torta es ${tortas[7].nombre}, el precio para 10 porciones es de $${tortas[7].precioChica} y el precio para 16 porciones es de $${tortas[7].precioGrande}. Si tu compra es mayor a $5000, tenés un descuento del 20%.`)
+        break
+    case 8:
+        console.log(`Su torta es ${tortas[8].nombre}, el precio para 10 porciones es de $${tortas[8].precioChica} y el precio para 16 porciones es de $${tortas[8].precioGrande}. Si tu compra es mayor a $5000, tenés un descuento del 20%.`)
+        break
+    case 9:
+        console.log(`Su torta es ${tortas[9].nombre}, el precio para 10 porciones es de $${tortas[9].precioChica} y el precio para 16 porciones es de $${tortas[9].precioGrande}. Si tu compra es mayor a $5000, tenés un descuento del 20%.`)
+        break
+    case 10:
+        console.log(`Su torta es ${tortas[10].nombre}, el precio para 10 porciones es de $${tortas[10].precioChica} y el precio para 16 porciones es de $${tortas[10].precioGrande}. Si tu compra es mayor a $5000, tenés un descuento del 20%.`)
+        break
+    case 11:
+        console.log(`Su torta es ${tortas[11].nombre}, el precio para 10 porciones es de $${tortas[11].precioChica} y el precio para 16 porciones es de $${tortas[11].precioGrande}. Si tu compra es mayor a $5000, tenés un descuento del 20%.`)
+        break
+    case 12:
+        console.log(`Su torta es ${tortas[12].nombre}, el precio para 10 porciones es de $${tortas[12].precioChica} y el precio para 16 porciones es de $${tortas[12].precioGrande}. Si tu compra es mayor a $5000, tenés un descuento del 20%.`)
+        break
+    case 13:
+        console.log(`Su torta es ${tortas[13].nombre}, el precio para 10 porciones es de $${tortas[13].precioChica} y el precio para 16 porciones es de $${tortas[13].precioGrande}. Si tu compra es mayor a $5000, tenés un descuento del 20%.`)
+        break
+    case 14:
+        console.log(`Su torta es ${tortas[14].nombre}, el precio para 10 porciones es de $${tortas[14].precioChica} y el precio para 16 porciones es de $${tortas[14].precioGrande}. Si tu compra es mayor a $5000, tenés un descuento del 20%.`)
+        break
+    case 15:
+        console.log(`Su torta es ${tortas[15].nombre}, el precio para 10 porciones es de $${tortas[15].precioChica} y el precio para 16 porciones es de $${tortas[15].precioGrande}. Si tu compra es mayor a $5000, tenés un descuento del 20%.`)
+        break
+    case 16:
+        console.log(`Su torta es ${tortas[16].nombre}, el precio para 10 porciones es de $${tortas[16].precioChica} y el precio para 16 porciones es de $${tortas[16].precioGrande}. Si tu compra es mayor a $5000, tenés un descuento del 20%.`)
+        break
+    case 17:
+        console.log(`Su torta es ${tortas[17].nombre}, el precio para 10 porciones es de $${tortas[17].precioChica} y el precio para 16 porciones es de $${tortas[17].precioGrande}. Si tu compra es mayor a $5000, tenés un descuento del 20%.`)
         break
     default:
         console.log("Ingrese un número válido")
 }
+let precioTotal = tortas.reduce((torta1, torta2, torta3, torta4, torta5, torta6) => torta1 + torta2 + torta3 + torta4 + torta5 + torta6 + 0)
+console.log(precioTotal)
+let descuento = (precioTotal) => {
+    if (precioTotal >= 5000) {
+        precioTotal *= 0,8
+        } 
+        return precioTotal
+}
+
