@@ -1,119 +1,119 @@
 const tortas = [
     {
     id: 1, 
-    nombre: "Berrie pie", 
+    nombre: "BERRIE PIE", 
     ingredientes: "Masa sablée, mousse de chocolate blanco y cremoso de frutos rojos", 
     precioChica: 2100, 
     precioGrande: 3000
 },
     {
     id: 2, 
-    nombre: "Cheescake", 
+    nombre: "CHESSCAKE", 
     ingredientes: "Base de chocolate, mousse de chocolate blanco y cremoso de maracuyá", 
     precioChica: 2100, 
     precioGrande: 3000
 },
     {
     id: 3, 
-    nombre: "Chocoberry", 
+    nombre: "CHOCOBERRY", 
     ingredientes: "Mousse de chocolate y mousse de frutos rojos", 
     precioChica: 2200, 
     precioGrande: 3100
 },
     {
     id: 4, 
-    nombre: "Carrot cake", 
+    nombre: "CARROT CAKE", 
     ingredientes: "Bizcochuelo de zanahoria con nueces y pasas de uva, rellena y cubierta de una crema de manteca y queso", 
     precioChica: 1700, 
     precioGrande: 2400
 },
     {
     id: 5, 
-    nombre: "Crocante chocorange", 
+    nombre: "CROCANTE CHOCORANGE", 
     ingredientes: "Masa sablée, cremoso de naranja, ganche de chocolate y crocante de almendras", 
     precioChica: 2000, 
     precioGrande: 2850
 },
     {
     id: 6, 
-    nombre: "Crumble de manzanas", 
+    nombre: "CRUMBLE MANZANAS", 
     ingredientes: "Masa sablée, compota de manzanas con canela y crumble de nueces", 
     precioChica: 1700, 
     precioGrande: 2400
 },
     {
     id: 7, 
-    nombre: "Lemon pie", 
+    nombre: "LEMON PIE", 
     ingredientes: "Masa sablée, curd de limón y merengue italiano", 
     precioChica: 1600, 
     precioGrande: 2300
 },
     {
     id: 8, 
-    nombre: "Mousse del bosque", 
+    nombre: "MOUSSE DEL BOSQUE", 
     ingredientes: "Base de chocolate, mousse y mermelada de frutos del bosque", 
     precioChica: 2000, 
     precioGrande: 2850
 },
     {
     id: 9, 
-    nombre: "Mousse tropical", 
+    nombre: "MOUSSE TROPICAL", 
     ingredientes: "Base de chocolate, mousse y mermelada de maracuyá", 
     precioChica: 2000, 
     precioGrande: 2850
 },
     {
     id: 10, 
-    nombre: "Nougat", 
+    nombre: "NOUGAT", 
     ingredientes: "Masa sablée de chocolate, relleno de frutos secos y caramelo, mousse de chocolate",
     precioChica: 2200, 
     precioGrande: 3100
 },
     {
     id: 11, 
-    nombre: "Pirineos", 
+    nombre: "PIRINEOS", 
     ingredientes: "Brownie con nuez, dulce de leche y merengue italiano", 
     precioChica: 1900, 
     precioGrande: 2700
 },
     {
     id: 12, 
-    nombre: "Rogel", 
+    nombre: "ROGEL", 
     ingredientes: "Masa neutra, dulce de leche y merengue italiano", 
     precioChica: 1700, 
     precioGrande: 2400
 },
     {
     id: 13, 
-    nombre: "Sambayón", 
+    nombre: "SAMBAYÓN", 
     ingredientes: "Base de chocolate, bananas caramelizadas, mousse de Oporto y ganache de chocolate", 
     precioChica: 1900, 
     precioGrande: 2700
 },
     {
     id: 14, 
-    nombre: "Tarta de coco y dulce de leche", 
+    nombre: "TARTA DE COCO Y DULCE DE LECHE", 
     ingredientes: "Masa sablé, dulce de leche y relleno de coco", 
     precioChica: 1600, 
     precioGrande: 2300
 },
     {
     id: 15, 
-    nombre: "Tentación", 
+    nombre: "TENTACIÓN", 
     ingredientes: "Base húmeda de chocolate, dulce de leche, mousse de chocolate y baño de cacao", 
     precioChica: 2000, 
     precioGrande: 2850
 },
     {
     id: 16, 
-    nombre: "Tiramisú", 
+    nombre: "TIRAMISÚ", 
     ingredientes: "Mousse de queso, creme brulée de café y vainillas remojadas en almibar de café", 
     precioChica: 1800, 
     precioGrande: 2600
 },
     {
     id: 17, 
-    nombre: "Trichoco", 
+    nombre: "TRICHOCO", 
     ingredientes: "Base húmeda de chocolate y tres mousses: de chocolate amargo, con leche y blanco", 
     precioChica: 2200, 
     precioGrande: 3300

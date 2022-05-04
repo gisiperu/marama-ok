@@ -218,4 +218,9 @@ form {
   font-size: larger;
   justify-content: right; }
 
+  #divTortas {
+    padding-left: 60px;
+    padding-right: 30px;
+  }
+
 /* termina formulario */
