@@ -222,5 +222,10 @@ form {
     padding-left: 60px;
     padding-right: 30px;
   }
+  
+  #boton1 {
+    margin-left: 500px;
+    margin-bottom: 1000px; 
+  }
 
 /* termina formulario */

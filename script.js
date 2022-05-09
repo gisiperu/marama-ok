@@ -19,6 +19,17 @@ tortas.forEach(torta => {
         <p class="nombres-items"> ${torta.nombre}</p>
         <p> ${torta.ingredientes}</p>
     </div>
-        `
+    `
+    divTortas.innerHTML +=`
+    <button id = torta${torta.id}>
+    Agregar al carrito
+    </button>`
+    
 })
+
+let boton1 = document.getElementById('boton1')
+    boton1.addEventListener('click'), (e) => {
+        console.log(e)
+}
+
 
