@@ -3,15 +3,11 @@ let seleccion = tortas.find(e => e.id === id)
 return seleccion
 }
 
-/*let carrito = []
-for(let i = 0; i < 5; i++) {
-    agregar(Number(prompt("Elija un número entre 1 y 17"))) 
-    console.log(carrito.push(agregar))   
+function agregar(id) {
+    let seleccion = tortas.find(e => e.id === id)
+    console.log(seleccion)
+    return seleccion
 }
-
-let precioTotal = carrito.reduce((a, b) => a + b.precioChica, 0)
-console.log(precioTotal)*/
-
 let divTortas = document.getElementById('divTortas')
 tortas.forEach(torta => {
     divTortas.innerHTML += `
@@ -21,15 +17,35 @@ tortas.forEach(torta => {
     </div>
     `
     divTortas.innerHTML +=`
-    <button id = torta${torta.id}>
+    <button id="boton" onclick = agregar${torta.id}>
     Agregar al carrito
     </button>`
     
 })
 
-let boton1 = document.getElementById('boton1')
+let boton1 = document.getElementById('tortas1')
     boton1.addEventListener('click'), (e) => {
         console.log(e)
 }
+
+let carrito = []
+if (localStorage.getItem('carrito')) { 
+    carrito = JSON.parse.localStorage.getItem('carrito')
+} else { 
+    localStorage.setItem('carrito', JSON.stringify(carrito))
+}
+/*divTortas = document.querySelector('#divTortas')
+tortas.forEach((torta, ${torta.id}) => {
+    divTortas.innerHTML += `
+    <torta${torta.id}`
+})*/
+tortas.forEach((e, indice) => {
+    document.querySelector(`#boton${indice}`).addEventListener('click', () => {
+        let productoCarrito = tortas`${torta.id}`
+        carrito.push(productoCarrito)
+        localStorage.setItem('carrito', JSON.stringify('carrito'))
+    })
+})
+
 
 
