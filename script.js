@@ -3,7 +3,6 @@ function agregar(id) {
     let seleccion = tortas.find(e => e.id === id)
     carrito.push(seleccion)
     localStorage.setItem('carrito', JSON.stringify(carrito))
-    console.log(seleccion)
     return seleccion
 }
 
@@ -25,12 +24,15 @@ tortas.forEach(torta => {
     boton1.addEventListener('click'), (e) => {
         console.log(e)
 }*/
-let carrito = []
-if (localStorage.getItem('carrito')) { 
-    carrito = JSON.parse(localStorage.getItem('carrito'))    
+let carrito = localStorage.getItem('Carrito') ?? []
+/*[]
+if (localStorage.getItem('Carrito')) { 
+    carrito = JSON.parse(localStorage.getItem('Carrito'))    
 } else { 
-    localStorage.setItem('carrito', JSON.stringify(carrito))
-}
+    localStorage.setItem('Carrito', JSON.stringify(carrito))
+}*/
+
+
 /*divTortas = document.querySelector('#divTortas')
 tortas.forEach((torta, ${torta.id}) => {
     divTortas.innerHTML += `
