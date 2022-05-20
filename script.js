@@ -10,15 +10,31 @@ function agregar(id) {
 let divTortas = document.getElementById('divTortas')
 tortas.forEach(torta => {
     divTortas.innerHTML += `
-    <div id = torta${torta.id}>
-        <p class="nombres-items"> ${torta.nombre}</p>
-        <p> ${torta.ingredientes}</p>
-    </div>
-    <button id="boton" onclick = "agregar(${torta.id})">
-    Agregar al carrito
-    </button>`
-    
+        <div id = torta${torta.id}>
+            <p class="nombres-items"> ${torta.nombre}</p>
+            <p> ${torta.ingredientes}</p>
+        </div>
+        <button id="boton" onclick = "agregar(${torta.id})">Agregar al carrito</button>`
 })
+let boton = document.getElementById('boton')
+tortas.forEach((torta, indice) => {
+document.querySelector(`#boton${indice}`).addEventListener('click', () => {
+    Toastify({
+        text: "This is a toast",
+        duration: 3000,
+        destination: "https://github.com/apvarun/toastify-js",
+        newWindow: true,
+        close: true,
+        gravity: "top", // `top` or `bottom`
+        position: "left", // `left`, `center` or `right`
+        stopOnFocus: true, // Prevents dismissing of toast on hover
+        style: {
+          background: "linear-gradient(to right, #00b09b, #96c93d)",
+        },
+        onClick: function(){} // Callback after click
+      }).showToast();
+})
+
 
 /*let boton1 = document.getElementById('tortas1')
     boton1.addEventListener('click'), (e) => {
