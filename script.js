@@ -20,6 +20,9 @@ function agregar(id) {
 }
 
 let divTortas = document.getElementById('divTortas')
+fetch('tortas.json')
+.then(response => response.json())
+.then(tortas => {
 tortas.forEach(torta => {
     divTortas.innerHTML += `
         <div id = torta${torta.id}>
@@ -27,6 +30,7 @@ tortas.forEach(torta => {
             <p> ${torta.ingredientes}</p>
         </div>
         <button id="boton" onclick = "agregar(${torta.id})">Agregar al carrito</button>`
+    })
 })
 
 let carrito = localStorage.getItem('Carrito') ?? []
