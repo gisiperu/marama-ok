@@ -20,7 +20,7 @@ function agregar(id) {
 }
 
 let divTortas = document.getElementById('divTortas')
-fetch('tortas.json')
+fetch('/tortas.json')
 .then(response => response.json())
 .then(tortas => {
 tortas.forEach(torta => {
